@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@toznysecure/sdk": "^1.5.1",
+    "prompt-sync": "^4.2.0"
+  }
+}
