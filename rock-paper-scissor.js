@@ -101,46 +101,7 @@ async function Judge(judge) {
     )
     
     const read = await judge.readRecord(written.meta.recordId)
-    // Read the data directly by ID
-    //const aRecordId = await RecordMove(Alicia, AliciaMove)
-    //const bRecordId = await RecordMove(Bruce, BruceMove)
-
-    //const AliciaRead = await judge.readRecord(aRecordId)
-    //const BruceRead = await judge.readRecord(bRecordId)
-    
-    /*const AliciaRead =await RecordMove(Alicia, AliciaMove) 
-    const BruceRead =await RecordMove(Bruce, BruceMove) 
-    const read = await judge.readRecord(written.meta.recordId)
-
-    if(AliciaRead.data.Move === BruceRead.data.move)
-      read.data.Winner = 'Tie'
-    read.data.Round = AliciaRead.data.Round*/
-
-     /*else if(AliciaMove.move === 'Rock'){
-    if(BruceMove.move === 'Paper')
-      read.data.Winner = 'Bruce'
-    if(BruceMove.move === 'Scissor')
-      read.data.Winner = 'Alicia'
-  }
-
-  else if(AliciaMove.move === 'Paper'){
-    if(BruceMove.move === 'Scissor')
-      read.data.Winner = 'Bruce'
-    if(BruceMove.move === 'Rock')
-      read.data.Winner = 'Alicia'
-  }
-
-  else if(AliciaMove.move === 'Scissor'){
-    if(BruceMove.move === 'Rock')
-      read.data.Winner = 'Bruce'
-    if(BruceMove.move === 'Paper')
-      read.data.Winner = 'Alicia'
-  }
-
-  else
-    read.data.Winner = 'None'
-  
-  read.data.Round = Round*/
+   
     if(AliciaMove.move === BruceMove.move)
       read.data.Winner = 'Tie'
 
